@@ -216,6 +216,13 @@ body::after {
   align-self: center;
   user-select: none;
 }
+/* snappier, smooth glide for the short evasive hops */
+.btn-no.is-fleeing {
+  transition:
+    transform 0.24s cubic-bezier(0.22, 0.61, 0.36, 1),
+    box-shadow 0.2s ease;
+  box-shadow: 0 10px 24px rgba(255, 46, 99, 0.22);
+}
 .btn-no.is-broken {
   background: #ffe5e5;
   color: #b91c1c;

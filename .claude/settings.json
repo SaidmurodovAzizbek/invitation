@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(node flow.js)",
+      "Bash(npm run *)",
+      "Bash(curl -sf -m 3 http://localhost:5173)"
+    ]
+  }
+}
