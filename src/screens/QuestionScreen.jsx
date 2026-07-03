@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import EvadingNoButton from '../components/EvadingNoButton'
 
 const BURST_HEARTS = Array.from({ length: 14 }, (_, i) => i)
 
@@ -57,7 +56,14 @@ export default function QuestionScreen({ onYes }) {
           >
             O’ylab ko’rdim va baribir roziman 🥰
           </button>
-          <EvadingNoButton onRefused={handleRefused} broken={refused} />
+          {/* the "No" button simply doesn't work — one press marks it broken */}
+          <button
+            type="button"
+            className={`btn btn-no ${refused ? 'is-broken' : ''}`}
+            onClick={() => !refused && handleRefused()}
+          >
+            {refused ? '❌ Bu tugma ishlamaydi!' : 'Yo’q, rozi emasman 🙅‍♀️'}
+          </button>
         </div>
       </div>
 
