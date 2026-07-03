@@ -12,9 +12,9 @@ export default function WelcomeScreen({ onOpen }) {
         <div className="hero-heart hh-side hh-right"><div className="css-heart" /></div>
       </div>
 
-      <h1 className="script welcome-title">Salom, go’zal inson!</h1>
+      <h1 className="script welcome-title">Salom!</h1>
       <p className="welcome-sub">
-        Senga atalgan juda maxsus narsa bor... 🤫💌
+        Sen uchun atalgan maxsus taklifim bor... 🤫💌
       </p>
 
       <button type="button" className="btn btn-primary btn-xl pulse-glow" onClick={onOpen}>

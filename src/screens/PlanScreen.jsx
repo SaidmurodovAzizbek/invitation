@@ -2,9 +2,9 @@ import { useState } from 'react'
 import Calendar from '../components/Calendar'
 import { formatUzDate, isSameDay, nowHHMM, startOfDay } from '../utils/dateUz'
 
-const PLACE_IDEAS = ['☕ Kafe', '🌳 Park', '🎬 Kino', '🍽 Restoran', '🎡 Attraksion']
+const PLACE_IDEAS = ['☕ Kafe', '🌳 Park', '🎬 Kino', '🍽 Restoran']
 const TIME_SLOTS = ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00']
-const FLOWER_IDEAS = ['🌹 Atirgul', '🌷 Lola', '🌼 Romashka', '🌸 Sakura', '🌻 Kungaboqar', '💐 Aralash guldasta']
+const FLOWER_IDEAS = ['🌹 Atirgul', '🌷 Lola', '🌼 Nilufar', '💐 Aralash guldasta']
 
 const STEPS = ['place', 'date', 'time', 'flowers', 'note']
 
@@ -141,8 +141,7 @@ export default function PlanScreen({ plan, setPlan, onDone }) {
 
         {step === 'flowers' && (
           <>
-            <h2 className="script step-title">Qanday gullar yoqadi? 💐</h2>
-            <p className="step-sub">Bilishim kerak... sababini keyin bilasan 😏</p>
+            <h2 className="script step-title">Senga qanday gullar yoqadi? 💐</h2>
             <div className="chips">
               {FLOWER_IDEAS.map((f) => (
                 <button

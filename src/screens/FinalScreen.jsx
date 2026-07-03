@@ -26,7 +26,7 @@ export default function FinalScreen({ plan }) {
         <div className="invite-divider">💞 ─── 💌 ─── 💞</div>
 
         <p className="invite-body">
-          Azizam! 💖 Seni <b>{formatUzDate(plan.date)}</b> kuni soat{' '}
+          💖 Seni <b>{formatUzDate(plan.date)}</b> kuni soat{' '}
           <b>{plan.time}</b> da <b>«{plan.place}»</b> da uchrashuvga taklif qilaman.
         </p>
 
