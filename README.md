@@ -1,16 +1,30 @@
-# React + Vite
+# Taklifnoma 💌
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A playful, romantic date-invitation site. Frontend only — no backend, no database.
 
-Currently, two official plugins are available:
+## Flow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. **Welcome** — beating hearts and the invitation button
+2. **Question** — "will you go out with me?" with two honest answers and one
+   "No" button that runs away from the cursor (desktop) and dodges taps
+   (mobile). If somehow pressed, it "breaks" and marks the correct answers.
+3. **Planner** — place → date (custom calendar, past dates disabled) → time
+   (past times disabled for today) → favourite flowers → a note
+4. **Final invitation** — winged heart pierced by Cupid's arrow, canvas
+   fireworks (some bursts are heart-shaped) and a ~30s romantic melody
+   synthesized live with the Web Audio API — no audio files needed.
 
-## React Compiler
+UI language: Uzbek. Design: red / pink / white, fully responsive.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the Oxlint configuration
+React 19 + Vite. No other runtime dependencies.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Run
+
+```bash
+npm install
+npm run dev      # dev server on http://localhost:5173 (exposed to LAN)
+npm run build    # production build in dist/
+npm run lint     # oxlint
+```
